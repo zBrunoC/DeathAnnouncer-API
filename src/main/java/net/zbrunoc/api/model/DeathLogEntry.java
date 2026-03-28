@@ -23,6 +23,19 @@ public class DeathLogEntry {
             String weapon,
             String source
     ) {
+        this(victimUUID, victimName, killerUUID, killerName, cause, weapon, source, Instant.now().toEpochMilli());
+    }
+
+    public DeathLogEntry(
+            UUID victimUUID,
+            String victimName,
+            UUID killerUUID,
+            String killerName,
+            String cause,
+            String weapon,
+            String source,
+            long timestamp
+    ) {
         this.victimUUID = victimUUID;
         this.victimName = victimName;
         this.killerUUID = killerUUID;
@@ -30,7 +43,7 @@ public class DeathLogEntry {
         this.cause = cause;
         this.weapon = weapon;
         this.source = source;
-        this.timestamp = Instant.now().toEpochMilli();
+        this.timestamp = timestamp;
     }
 
     public UUID getVictimUUID() { return victimUUID; }
