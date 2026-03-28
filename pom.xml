@@ -8,7 +8,7 @@
 
     <groupId>com.github.zBrunoC</groupId>
     <artifactId>DeathAnnouncer-API</artifactId>
-    <version>1.4.0-RELEASE</version>
+    <version>1.4.4-RELEASE</version>
     <packaging>jar</packaging>
 
     <name>DeathAnnouncer API</name>
